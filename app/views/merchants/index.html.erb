@@ -1,0 +1,13 @@
+
+<div id="iframe">
+
+<script type="text/javascript">
+  $(window).on('load', function(){
+    $.get("<%=@portal_url%>", function (
+      data
+    ) {
+      console.log(data)
+      $("#iframe").html(data);
+    });
+  });
+</script>
